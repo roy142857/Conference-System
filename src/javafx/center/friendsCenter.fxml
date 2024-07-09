@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.center.FriendsCenterController">
+   <top>
+      <ToolBar BorderPane.alignment="CENTER">
+         <items>
+          <Button fx:id="createPerson" mnemonicParsing="false" text="Create Person" />
+            <Button fx:id="messageAllAttendee" mnemonicParsing="false" text="Message All Attendees" />
+            <Button fx:id="messageAllSpeaker" mnemonicParsing="false" text="Message All Speakers" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER">
+        <items>
+            <TitledPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Friends">
+               <content>
+                  <TableView fx:id="friendTable" />
+               </content>
+            </TitledPane>
+            <TitledPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Co-workers">
+               <content>
+                  <TableView fx:id="coworkerTable" />
+               </content>
+            </TitledPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

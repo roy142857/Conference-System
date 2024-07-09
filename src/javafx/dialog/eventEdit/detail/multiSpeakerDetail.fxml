@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.*?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dialogs.eventEdit.detail.MultiSpeakerDetailController">
+   <children>
+      <TitledPane text="Basic Information" VBox.vgrow="NEVER">
+        <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="300.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="50.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Title" />
+                  <Label text="Speaker" GridPane.rowIndex="1" />
+                  <TextField fx:id="title" maxWidth="1.7976931348623157E308" promptText="Enter the Title" GridPane.columnIndex="1" />
+                  <CheckComboBox fx:id="speaker" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+        </content>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </TitledPane>
+      <TitledPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Time &amp; Location" VBox.vgrow="NEVER">
+          <content>
+                <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="300.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="50.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Location" />
+                        <Label text="Date" GridPane.rowIndex="1" />
+                        <TextField fx:id="location" maxWidth="1.7976931348623157E308" promptText="Enter the Location" GridPane.columnIndex="1" />
+                  <DatePicker fx:id="date" maxWidth="1.7976931348623157E308" promptText="Enter the Date" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Time" GridPane.rowIndex="2" />
+                  <Label fx:id="timePreview" text="(Time Preview)" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+                  <Separator GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
+                  <RangeSlider fx:id="time" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    </children>
+                </GridPane>
+          </content>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </VBox.margin>
+      </TitledPane>
+      <TitledPane text="SignUp Control" VBox.vgrow="NEVER">
+        <content>
+                <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="300.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="50.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Capacity" />
+                        <Slider fx:id="capacity" majorTickUnit="10.0" max="200.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Slider>
+                    </children>
+                </GridPane>
+        </content>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </VBox.margin>
+      </TitledPane>
+      <TitledPane text="Reward &amp; Requirement">
+        <content>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                <columnConstraints>
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                    <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="300.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="-Infinity" minHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+                    <Label text="Reward" />
+                    <Slider fx:id="reward" majorTickUnit="10.0" max="200.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" GridPane.columnIndex="1">
+                        <GridPane.margin>
+                            <Insets />
+                        </GridPane.margin>
+                    </Slider>
+                  <Label text="Requirement" GridPane.rowIndex="1" />
+                  <Slider fx:id="requirement" layoutX="120.0" layoutY="20.0" majorTickUnit="10.0" max="200.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                </children>
+            </GridPane>
+        </content>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </VBox.margin>
+      </TitledPane>
+   </children>
+</VBox>

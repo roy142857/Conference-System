@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.center.dashboard.OrganizerDashboardController">
+   <top>
+      <ToolBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <items>
+            <Label fx:id="welcome" text="Welecome!">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <TitledPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Top Performing Speakers" BorderPane.alignment="CENTER">
+        <content>
+            <BarChart fx:id="topSpeakerBarChat">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+        </content>
+      </TitledPane>
+   </center>
+</BorderPane>

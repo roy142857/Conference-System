@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.center.EventCenterController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+          <items>
+              <Button fx:id="createEvent" alignment="BASELINE_LEFT" mnemonicParsing="false" text="Create Event" />
+            <Button fx:id="downloadSchedule" mnemonicParsing="false" text="Download Schedule" />
+              <Pane HBox.hgrow="ALWAYS" />
+              <ChoiceBox fx:id="searchChoice" prefWidth="150.0" />
+              <TextField fx:id="search" promptText="Search" />
+          </items>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ToolBar>
+   </top>
+   <center>
+      <TableView fx:id="eventTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

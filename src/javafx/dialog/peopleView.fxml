@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dialogs.PeopleViewController">
+   <center>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="NEVER" minWidth="100.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <Label text="Type" />
+            <Label fx:id="type" text="-" GridPane.columnIndex="1" />
+            <Label text="Name" GridPane.rowIndex="1" />
+            <Label fx:id="name" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Points" GridPane.rowIndex="2" />
+            <Label fx:id="points" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Separator prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
+            <Label fx:id="respond" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <ButtonBar BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="addFriend" mnemonicParsing="false" text="Add As Friends" />
+            <Button fx:id="removeFriend" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Remove From Friends" />
+        </buttons>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </ButtonBar>
+   </bottom>
+   <top>
+      <ToolBar maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="launchChat" mnemonicParsing="false" text="Lanunch Chat" />
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>

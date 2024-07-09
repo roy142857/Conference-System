@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.center.dashboard.AttendeeDashboardController">
+   <top>
+      <ToolBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <items>
+            <Label fx:id="welcome" text="Welecome!">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.49498327759197325" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <items>
+            <TitledPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Events You Might Be Interested">
+              <content>
+                  <TableView fx:id="recommendedEvents" />
+              </content>
+            </TitledPane>
+            <TitledPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Someone With Similar Interests">
+              <content>
+                  <TableView fx:id="recommendedFriends" />
+              </content>
+            </TitledPane>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>
